@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Jeff Vercruyssen -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- BOOTSTRAP (style only)-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="pit.css" />
+    <title>Intelligence Test 3</title>
+    <script type="text/javascript" src="test3-validation.js"></script>
+  </head>
+  <body lang="en-US">
+    <div class="container-fluid">
+      <form class="form-horizontal">
+        <div class="row">
+          <div class="col-sm-offset-2">
+            <h1>Intelligence Test 3</small></h1>
+            <p>Examples</p>
+            <p>4,12 -> 1612841444</p>
+            <p>5,7 -> 12725495</p>
+            <p>3,8 -> 11853643</p>
+            <p>9,20 -> 29201194009</p>
+            <p>2,17 -> 19171522892</p>
+          </div>
+        </div> <!-- end heading row /-->
+        <div class="row myinput-row">
+          <div class="form-group" id="numbersGroup">
+            <label for="numbers" class="col-sm-2 control-label">Enter two numbers</label>
+            <div class="col-sm-2">
+              <input type="text" id="input1" class="form-control input-md"
+                  placeholder="input 1" onchange="validate();" />
+              <input type="text" id="input2" class="form-control input-md"
+                  placeholder="input 2" onchange="validate();" />
+              <span id="numbersError" class="control-label hidden-message">
+                Error Placeholder (hidden)
+              </span>
+            </div>
+          </div>
+        </div> <!-- end numbers input row /-->
+        <div class="row myanswer-row">
+          <div class="form-group" id="answerGroup">
+            <label for="answers" class="col-sm-2 control-label">Enter the expected
+              answer</label>
+            <div class="col-sm-2">
+              <input type="text" id="inputAnswer" class="form-control input-md"
+                  placeholder="answer" onchange="checkAnswer();" />
+              <span id="answerError" class="control-label hidden-message">
+                    Error Placeholder (hidden)
+              </span>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div>
+        <a href="index.html">Return to home</a>
+      </div>
+    </div>
+  </body>
+</html>
