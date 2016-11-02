@@ -1,1 +1,0 @@
-# p02-Pseudo-Intelligence-Test
